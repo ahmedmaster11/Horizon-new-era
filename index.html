@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medical Equipment Maintenance</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #67a4ff;">
+            <a class="navbar-brand" href="#">Medical-Tec</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#products">Contant</a>
+                    <a class="nav-link" href="#about">about</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- image--scrool -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/11.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/12.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/13.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <section class="hero" id="about">
+        <div class="container">
+            <h2>Your Partner in Medical Technology</h2>
+            <p>Leading the way with cutting-edge medical devices designed to improve lives.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a global leader in medical technology, providing innovative solutions for healthcare professionals
+                and patients worldwide.</p>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/table_bion_manua10l_.jpg" alt="Product 1">
+                    <h3>تربيزه عمليات مانويوال هيدروليك حركيه جانبيه </h3>
+                    <p>69,000 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/taghizat_8oraf_el_amliat20.png" alt="Product 2">
+                    <h3>تجهيزات غرف العمليات</h3>
+                    <p>63500 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/hadant_atfal30l.png" alt="Product 3">
+                    <h3>حضانات أطفال</h3>
+                    <p> 25000 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/-500x500-70.jpg" alt="Product 3">
+                    <h3> ثلاجه انسولين حجم كبير</h3>
+                    <p> 980 LE </p>
+                </div>
+                <div class="product-item">
+                    <img src="images/COmpmist-80w.jpg" alt="Product 3">
+                    <h3> جهاز بخار كومب ميست </h3>
+                    <p>2300 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/download (6).jpeg" alt="Product 3">
+                    <h3>جهاز الصونار </h3>
+                    <p>7899 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/de5622eb70.jpg" alt="Product 3">
+                    <h3>إنجوي كير كرسي كهربائي متحرك </h3>
+                    <p>4800 LE</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/file_50.jpg" alt="Product 3">
+                    <h3>سرير كشف نيكل 4*4(شزلونج)</h3>
+                    <p>3250 LE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- imageee -->
+    <div class="gallery">
+        <img src="images/5 (1).jpg" alt="Medical Equipment" onclick="openLightbox(this)">
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+    <script>
+        function openLightbox(image) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = image.src;
+            lightbox.style.display = 'flex';
+        }
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+    <!-- اراء العملاء -->
+    <div class="container my-5">
+        <h2 class="mb-4">آراء عملائنا</h2>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="images/man-1.png" alt="">
+                            <p>مؤسسة الحياة العلمية علم ودقة وصدق ومتابعة، بالتوفيق إن شاء الله.</p>
+                            <h6>فياض جراد</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="images/man-1.png" alt="">
+                            <p>شكرًا للشركة العريقة حسن تعامل وتوصيل سريع وشيابهم طيبين ومبتسمين.</p>
+                            <h6>جيجي علابي</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="images/man-1.png" alt="">
+                            <p>مكان معتمد للمواد المخبرية والطبية بأسعار مناسبة.</p>
+                            <h6>بيان داهر</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- footer -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-section company-info">
+                        <h3>تواصل معنا</h3>
+                        <p> القاهرة الجديدة</p>
+                        <p><strong>الهاتف:</strong> 01505839934</p>
+                        <p><strong> horizon new era @.com </strong>: البريد الالكتروني </p>
+                    </div>
+                    <div class="footer-section about">
+                        <img src="images/logo ph.png" alt="Lifetime Logo">
+                        <p>
+                            التميّز في مجال مستلزمات الطبيه على مستوى عالمي وتقديم أفضل تجربة لشركائنا
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""> <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2024 horizon.com</p>
+                </div>
+            </footer>
+
+</body>
+
+</html>
